@@ -1,0 +1,55 @@
+html.menu-open
+  body
+    overflow: hidden
+    position: fixed
+    top: 0
+    left: 0
+    right: 0
+    bottom: 0
+  .menu-overlay
+    background: rgba(0,0,0,0.7)
+    pointer-events: auto
+
+    .menu-plate
+      transform: translate3d(-100%, 0px, 0px)
+
+
+.menu-overlay
+  position: fixed
+  background: transparent
+  top: 0
+  left: 0
+  right: 0
+  bottom: 0
+  pointer-events: none
+  transition: all 0.3s ease-in-out
+
+  .menu-plate
+    position: absolute
+    top: 0px
+    right: -82%
+    width: 80%
+    height: 100%
+    background: $white
+    box-shadow: 3px 0 30px rgba(0, 0, 0, 0.4)
+    transition: all 0.35s ease-in-out
+
+    svg
+      fill: $dark-text
+      vertical-align: bottom
+      margin-right: 5%
+
+    .menu
+      margin-top: 22%
+      list-style: none
+
+      li
+        padding: 20px 5%
+        a
+          color: $dark-text
+          font-size: 1.429em
+          text-transform: uppercase
+
+          span
+            display: block
+            margin: 5px calc(5% + 24px) 0

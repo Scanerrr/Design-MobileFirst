@@ -1,0 +1,19 @@
+doctype html
+html(lang="en")
+  head
+    title Mobile First
+    meta(charset="utf-8")
+    meta(name="viewport", content="width=device-width, initial-scale=1.0")
+    link(rel="stylesheet", href="/assets/css/app.css")
+  body#home
+
+    include layouts/nav.pug
+    include layouts/header.pug
+    include layouts/separator.pug
+    include layouts/gallery.pug
+    include layouts/article.pug
+
+    include layouts/nav-drawer.pug
+
+    script(type="text/javascript", src="/assets/js/jquery-3.1.1.min.js")
+    script(type="text/javascript", src="/assets/js/main.js")
